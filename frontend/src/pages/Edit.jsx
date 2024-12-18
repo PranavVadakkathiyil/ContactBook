@@ -26,7 +26,7 @@ const Form = () => {
     <>
       
       <form onSubmit={FormDataHandler} action="" className='border flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-4 text-black p-10 shadow-md'>
-      <p className='text-center  text-[1.4rem]'>Add Contact</p>
+      <p className='text-center  text-[1.4rem]'>Edit Contact</p>
         <div>
           <label htmlFor="">Name</label>
           <input onChange={(e)=>setname(e.target.value)} value={name} className=' w-full outline-none border border-gray-800 px-5 py-2' type="text" name='name'  placeholder='Name' required  />

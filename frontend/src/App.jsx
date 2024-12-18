@@ -5,15 +5,16 @@ import Home from "./pages/Home";
 import Details from "./pages/Details";
 import Login from "./pages/Login";
 import Form from "./pages/Form";
-
+import Edit from './pages/Edit'
 const App = () => {
   return (
     <div className="">
     <NavBar/>
       <Routes >
-      <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<Login/>}/>
+      <Route path='/Home' element={<Home/>}/>
         <Route path='/details/:productId' element={<Details/>}/>
-        <Route path='/edit' element={<Form/>}/>
+        <Route path='/edit' element={<Edit/>}/>
         <Route path='/add' element={<Form/>}/>
       </Routes>
     </div>
